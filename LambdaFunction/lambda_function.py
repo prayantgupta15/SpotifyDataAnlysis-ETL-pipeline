@@ -6,9 +6,8 @@ import boto3
 
 data = {
     "grant_type":"client_credentials",
-    "client_id":"0b995e0d1d6242a9a8c47d994ecf3e3c",
-    "client_secret":"82c95cbd43bd42bd907835ad7d8113fa",
-    "code":'BQAkI-44F9WCfdgau6FDGTh3mSOlEC0nHdNdj6WWie5PhG_fFuZq3Nt-qGzyVV8N48TVSzNz8I7ZnGH_CVb8-fus6eInb5YGBUuQg8yUVQ0wdXaV2NI'
+    "client_id":"CLIENT_ID",
+    "client_secret":"CLIENT_SECRET"
 }
 
 def authorise():
