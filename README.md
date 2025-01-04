@@ -36,7 +36,7 @@ Quicksight:
 <img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/4cb9aaeb-caa5-452f-b525-75e3dac15f2b" />
 
 ![QuicksightDashboard](https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3)
-https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/QuicksightDashboard.png
+![QuicksightDashboard](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/QuicksightDashboard.png)
 
 
 
