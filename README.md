@@ -30,6 +30,11 @@ Load:
   - Created a EventBridge rule for particular JSON files path only which will trigger Glue workflow.
   - MSCK Repair Table command is used to load/add new partitions.
 
+**Analysis**
+
+Quicksight:
+<img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3" />
+
 
 
 
