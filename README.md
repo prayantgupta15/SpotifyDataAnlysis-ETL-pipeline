@@ -18,7 +18,7 @@ Extraction:
   - This job transforms few columns and add an update_ts column.
   - After succesfully completion of this job, triggers next Glue job in Glue workflow 'spotifyETLAthenaQueriesJob'
 
-Load:
+**Load:**
   -  spotifyETLAthenaQueriesJob: Run 2 Athena queries.
   -  One is to add the new partition (year/month/day) in Stage table
   -  Another to MERGE iceberg table with Stage table to insert new added records (current day's records).
@@ -30,12 +30,13 @@ Load:
   - Created a EventBridge rule for particular JSON files path only which will trigger Glue workflow.
   - MSCK Repair Table command is used to load/add new partitions.
 
+
 **Analysis:**
 Quicksight:
 <img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/4cb9aaeb-caa5-452f-b525-75e3dac15f2b" />
 
 ![QuicksightDashboard](https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3)
-
+https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/QuicksightDashboard.png
 
 
 
