@@ -33,7 +33,7 @@ Load:
 **Analysis**
 
 Quicksight:
-<img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3" />
+![QuicksightDashboard](https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3)
 
 
 
