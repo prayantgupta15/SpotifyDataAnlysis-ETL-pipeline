@@ -15,14 +15,13 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-from datetime import datetime
+from datetime import datetime,timedelta
 
 current_timestamp_python = datetime.now()
 
 year = current_timestamp_python.year
 month = current_timestamp_python.month
 day = current_timestamp_python.day
-
 source_data_path = f"s3://prayantdatasetbucket/myspotifyAPIData/source_raw_data_json/year={year}/month={month}/day={day}/*.json"
 transformed_data_path = f"s3://prayantdatasetbucket/myspotifyAPIData/source_raw_data_parquetFiles/year={year}/month={month}/day={day}/"
 
@@ -36,7 +35,7 @@ df.printSchema()
 
 #Transformations
 df = df.withColumn('tracks',explode('tracks.items'))\
-.withColumn('data_last_refreshed',lit(datetime.now()))\
+.withColumn('data_last_refreshed',lit(datetime.now()-timedelta(days=0) ))\
 .withColumn('artists_exploded',explode('tracks.track.artists'))
 
 df = df.select(
