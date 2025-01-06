@@ -33,6 +33,12 @@ Extraction:
 
 **Analysis:**
 Quicksight:
+<img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/f5420232-f180-49a0-8578-9fb29872179b" />
+<img width="374" alt="DAG's schedule_interval" src="https://github.com/user-attachments/assets/e4751ffe-0023-4f8c-8f73-78249daafd42" />
+<img width="257" alt="AirflowDAG" src="https://github.com/user-attachments/assets/5a05d81c-3c03-4ffa-b5be-9cd8fa20d05f" />
+
+
+
 <img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/4cb9aaeb-caa5-452f-b525-75e3dac15f2b" />
 
 ![QuicksightDashboard](https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3)
