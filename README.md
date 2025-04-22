@@ -6,7 +6,8 @@ This pipeline has been architectured leveraging AWS Cloud Services like Lambda, 
 ![SpotifyProject](https://github.com/user-attachments/assets/1ad8b12a-3cde-4320-ad25-b69fa7421b4d)
 
 **Working:**
-Extraction:
+
+**Extraction:**
   - Data is being fetched from REST Spotify APIs, via lambda function which stores data in S3 bucket.
   - This lambda function is triggered via an Airflow DAG everyday at 07:00 AM UTC or 12:30 PM IST🕧 since playlist is refreshed daily at the same time.
   - Data is stored in hive partitions format. For e.g. ../year=2025/month=1/day=3 and in JSON format
@@ -14,7 +15,7 @@ Extraction:
   - Triggered Glue workflow has 2 Glue jobs: spotifyETLAthenaQueriesJob and spotifyETLAthenaQueriesJob
 
 **Transform**
-  - convertingJSONToParquetJob: will read current days data and convert JSON format to Parquet format and write to different folder in same manner.
+  - convertingJSONToParquetJob: will read current day data and convert JSON format to Parquet format and write to different folder in same manner.
   - This job transforms few columns and add an update_ts column.
   - After succesfully completion of this job, triggers next Glue job in Glue workflow 'spotifyETLAthenaQueriesJob'
 
@@ -32,17 +33,13 @@ Extraction:
 
 
 **Analysis:**
-Quicksight:
-<img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/f5420232-f180-49a0-8578-9fb29872179b" />
-<img width="374" alt="DAG's schedule_interval" src="https://github.com/user-attachments/assets/e4751ffe-0023-4f8c-8f73-78249daafd42" />
-<img width="257" alt="AirflowDAG" src="https://github.com/user-attachments/assets/5a05d81c-3c03-4ffa-b5be-9cd8fa20d05f" />
 
-![](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/AirflowDAG.jpeg)
+**Quicksight:**
 
-<img width="727" alt="QuicksightDashboard" src="https://github.com/user-attachments/assets/4cb9aaeb-caa5-452f-b525-75e3dac15f2b" />
+![Ariana Grande Performance Metrics](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/Ariana%20Grande%20Performance%20Metrics.jpg)
 
-![QuicksightDashboard](https://github.com/user-attachments/assets/5504f85c-830d-471b-9d3b-60d8f34bc2d3)
-![QuicksightDashboard](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/QuicksightDashboard.png)
+![ArtistsTrend](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/ArtistsTrend.jpg)
 
+![TracksTrends]([https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/Ariana%20Grande%20Performance%20Metrics.jpg](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/TracksTrends.jpg))
 
-
+<img width="1092" alt="Ariana Grande Performance Metrics" src="https://github.com/user-attachments/assets/24f08291-b8eb-4120-8e7d-04fe1b5d17b0" />
