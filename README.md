@@ -10,7 +10,11 @@ This pipeline has been architectured leveraging AWS Cloud Services like Lambda, 
 Following are the few snippets of the Quicksight dashboard implemented on the Glue catalog table ingested by the ETL pipeline (design discussed below).
 
 1. Check out the trends for artists selectively.
+- **Ariana Grande:**
 <img width="800" alt="Ariana Grande Performance Metrics" src="https://github.com/user-attachments/assets/24f08291-b8eb-4120-8e7d-04fe1b5d17b0" />
+
+- **Lady Gaga:**
+<img width="808" alt="Lady Gaga Performance Metrics" src="https://github.com/user-attachments/assets/d3a8084a-95a5-4d77-9b8c-0b27c9f3b5ff" />
 
 ------------------------------------------------------------------------------------------------------------------------
 
