@@ -1,6 +1,29 @@
+
 **Introduction**
+
 An ETL (Extract, Transform, Load) pipeline to analyse the Spotify Data and get the key abstracts like top artist, most popular tracks, top genres etc. 
 This pipeline has been architectured leveraging AWS Cloud Services like Lambda, Glue crawlers, data catalog, Athena, Glue pyspark jobs, Lake Formation, Glue workflow, Managed Workflow for Apache Airflow (MWAA) etc.
+
+
+**Final dashboard:**
+
+Following are the few snippets of the Quicksight dashboard implemented on the Glue catalog table ingested by the ETL pipeline (design discussed below).
+
+1. Check out the trends for artists selectively.
+<img width="800" alt="Ariana Grande Performance Metrics" src="https://github.com/user-attachments/assets/24f08291-b8eb-4120-8e7d-04fe1b5d17b0" />
+
+------------------------------------------------------------------------------------------------------------------------
+
+2. Check out the artists trend based on the number of distinct tracks featured in Global 100 playlist on Spotify:
+<img width="500" alt="ArtistsTrend" src="https://github.com/user-attachments/assets/e0ebbde7-7000-41a9-a612-a9b28e942319" />
+
+------------------------------------------------------------------------------------------------------------------------
+
+3. Check out the tracks trend based on the number of times each featured in Global 100 playlist on Spotify:
+<img width="500" alt="TracksTrends" src="https://github.com/user-attachments/assets/207f5b6d-bad4-4285-85a4-4e644458d5be" />
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 **Architecture:**
 ![SpotifyProject](https://github.com/user-attachments/assets/1ad8b12a-3cde-4320-ad25-b69fa7421b4d)
@@ -32,14 +55,3 @@ This pipeline has been architectured leveraging AWS Cloud Services like Lambda, 
   - MSCK Repair Table command is used to load/add new partitions.
 
 
-**Analysis:**
-
-**Quicksight:**
-
-![Ariana Grande Performance Metrics](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/Ariana%20Grande%20Performance%20Metrics.jpg)
-
-![ArtistsTrend](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/ArtistsTrend.jpg)
-
-![TracksTrends]([https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/Ariana%20Grande%20Performance%20Metrics.jpg](https://github.com/prayantgupta15/SpotifyDataAnlysis-ETL-pipeline/blob/main/Quicksight%20Dashboard/TracksTrends.jpg))
-
-<img width="1092" alt="Ariana Grande Performance Metrics" src="https://github.com/user-attachments/assets/24f08291-b8eb-4120-8e7d-04fe1b5d17b0" />
